@@ -6,10 +6,14 @@
       <class name="script.DemoA">
         <methods>
           <include name="OpenApp"/>
-          <include name="TestA"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.DemoA -->
+      <class name="xlwrite.write">
+        <methods>
+          <include name="writeToXl"/>
+        </methods>
+      </class> <!-- xlwrite.write -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

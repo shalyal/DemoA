@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import generic.WebGeneric;
 
 public class DashBoardPage {
+	private WebDriver driver;
 	@FindBy(id="welcome")
 	private WebElement welcome;
 	
@@ -15,6 +16,7 @@ public class DashBoardPage {
 	private WebElement logout;
 	
 	public DashBoardPage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	

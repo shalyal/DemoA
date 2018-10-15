@@ -71,7 +71,7 @@ public class Utility {
 			Workbook w = WorkbookFactory.create(new FileInputStream(path));
 			v=w.getSheet(sheet).getRow(r).getCell(c).toString();
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 		return v;
 	}
@@ -97,9 +97,14 @@ public class Utility {
 			w.close();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 	
-	
+	/*public static int getXLRowCount(String path,String Sheet) {
+		Workbook w = WorkbookFactory.create(new FileInputStream(path));
+		int i = w.getSheet("Sheet1").getRowSumsBelow();
+		return i;
+		cntrl+shift+/ for commenting
+	}*/
 }
